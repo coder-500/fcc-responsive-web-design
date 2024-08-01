@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our platform</p>
+    </header>
+
+    <main>
+        <form action="GET" id="survey-form">
+            <section>
+
+                <div>
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+
+
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="age" id="number-label">Age <small>(Optional)</small></label>
+                    <input type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+                </div>
+
+                <div>
+                    <label for="rating">How would you like to rate our service on a scale of 0 to 5 (where 0 is 'Very
+                        poor' and 5 is 'Excellent'): </label>
+                    <select name="score" id="rating">
+                        <option value="Select">Select Rating</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <p>Choose your favorite web language </p>
+                    <input type="radio" name="pr-lang" id="html" value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="radio" name="pr-lang" id="css" value="css">
+                    <label for="css">CSS</label>
+
+                    <input type="radio" name="pr-lang" id="js" value="js">
+                    <label for="js">JS</label>
+
+                </div>
+
+                <div>
+                    <p>On which social media platform(s) you follow us</p>
+                    <input type="checkbox" name="follow" id="yt">
+                    <label for="yt">YouTube</label>
+
+                    <input type="checkbox" name="follow" id="fb">
+                    <label for="fb">Facebook</label>
+
+                    <input type="checkbox" name="follow" id="ig">
+                    <label for="ig">Instagram</label>
+
+                    <input type="checkbox" name="follow" id="x">
+                    <label for="x">X</label>
+
+                    <input type="checkbox" name="follow" id="tiktok">
+                    <label for="tiktok">TikTok</label>
+                </div>
+
+
+                <div>
+                    <label for="comments">Any comments or suggestions?</label>
+                    <textarea name="comments" id="comments" placeholder="Enter your comment here ..." rows="5"
+                        cols="40"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="submit" id="submit">
+                </div>
+            </section>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
