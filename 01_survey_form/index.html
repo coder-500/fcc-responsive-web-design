@@ -15,29 +15,29 @@
     </header>
 
     <main>
-        <form action="GET" id="survey-form">
-            <section>
+        <form id="survey-form">
+            <section class="container">
 
-                <div>
-                    <label for="name" id="name-label">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <div class="name">
+                    <label for="name" id="name-label">Name</label> <br>
+                    <input type="text" name="name" id="name" class="field" placeholder="Enter your name" required>
                 </div>
 
 
-                <div>
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <div class="email">
+                    <label for="email" id="email-label">Email</label> <br>
+                    <input type="email" name="email" id="email" class="field" placeholder="Enter your email" required>
                 </div>
 
-                <div>
-                    <label for="age" id="number-label">Age <small>(Optional)</small></label>
-                    <input type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+                <div class="age">
+                    <label for="number" id="number-label">Age <small>(Optional)</small></label> <br>
+                    <input type="number" name="age" id="number" class="field" min="1" max="100" placeholder="Age">
                 </div>
 
-                <div>
-                    <label for="rating">How would you like to rate our service on a scale of 0 to 5 (where 0 is 'Very
-                        poor' and 5 is 'Excellent'): </label>
-                    <select name="score" id="rating">
+                <div class="rating">
+                    <label for="dropdown">How would you like to rate our service on a scale of 0 to 5 (where 0 is 'Very
+                        poor' and 5 is 'Excellent'): </label> <br>
+                    <select name="score" id="dropdown" class="field">
                         <option value="Select">Select Rating</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -49,46 +49,46 @@
 
                 </div>
 
-                <div>
+                <div class="language">
                     <p>Choose your favorite web language </p>
-                    <input type="radio" name="pr-lang" id="html" value="html">
-                    <label for="html">HTML</label>
 
-                    <input type="radio" name="pr-lang" id="css" value="css">
-                    <label for="css">CSS</label>
+                    <label for="html"><input type="radio" name="pr-lang" id="html" value="html"> HTML</label>
 
-                    <input type="radio" name="pr-lang" id="js" value="js">
-                    <label for="js">JS</label>
+
+                    <label for="css"><input type="radio" name="pr-lang" id="css" value="css"> CSS</label>
+
+
+                    <label for="js"><input type="radio" name="pr-lang" id="js" value="js"> JS</label>
 
                 </div>
 
-                <div>
+                <div class="social-media">
                     <p>On which social media platform(s) you follow us</p>
-                    <input type="checkbox" name="follow" id="yt">
-                    <label for="yt">YouTube</label>
 
-                    <input type="checkbox" name="follow" id="fb">
-                    <label for="fb">Facebook</label>
+                    <label for="yt"><input type="checkbox" name="follow" id="yt" value="youtube"> YouTube</label>
 
-                    <input type="checkbox" name="follow" id="ig">
-                    <label for="ig">Instagram</label>
 
-                    <input type="checkbox" name="follow" id="x">
-                    <label for="x">X</label>
+                    <label for="fb"> <input type="checkbox" name="follow" id="fb" value="facebook"> Facebook</label>
 
-                    <input type="checkbox" name="follow" id="tiktok">
-                    <label for="tiktok">TikTok</label>
+
+                    <label for="ig"><input type="checkbox" name="follow" id="ig" value="instagram"> Instagram</label>
+
+
+                    <label for="x"><input type="checkbox" name="follow" id="x" value="x"> X</label>
+
+
+                    <label for="tiktok"><input type="checkbox" name="follow" id="tiktok" value="tiktok"> TikTok</label>
                 </div>
 
 
-                <div>
-                    <label for="comments">Any comments or suggestions?</label>
+                <div class="comment">
+                    <label for="comments">Any comments or suggestions?</label> <br>
                     <textarea name="comments" id="comments" placeholder="Enter your comment here ..." rows="5"
                         cols="40"></textarea>
                 </div>
 
-                <div>
-                    <input type="submit" value="submit" id="submit">
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submit">
                 </div>
             </section>
         </form>
